@@ -1,0 +1,17 @@
+dataset:
+  dir_path: "../../datasets"
+  datasets:
+    mmlu:
+      answer_map: ["A", "B", "C", "D"]
+      formatted_name: "mars_corr_mmlu"
+      subsets:
+        - "high_school_mathematics"
+        - "college_mathematics"
+        - "abstract_algebra"
+
+system_prompt: "The following is a multiple choice question (with answers) about "
+
+model:
+  family: "Llama3"
+  size: "8B"
+  type: "chat"

@@ -11,10 +11,14 @@ Resources directory structure:
 
 ## Experiments
 
-1. PCA / tSNE on activations at ${l_i, ..., l_n}$, where $l_i \in$ residual stream transformer layers, on settings:
-- Prompt only
-- Full generation (prompt + generated answer)
-- (opt) CoT setting: (prompt + CoT, but no answer)
-    - Potential limitation: how to detect end of CoT / start of answer in model generations
+Sample number: 1000 samples?
 
-Evaluation: compare model generations against ground truth to obtain labels. Visualize plots in search of clusters across $n$ layers with clear separation among correct / incorrect generations.
+1. PCA / tSNE on activations at ${l_i, ..., l_n}$, where $l_i \in$ residual stream transformer layers, on settings:
+    - Prompt only
+    - Full generation (prompt + generated answer)
+    - (opt) CoT setting: (prompt + CoT, but no answer)
+        - Potential limitation: how to detect end of CoT / start of answer in model generations
+2. Visualize plots in search of clusters across $n$ layers with clear separation among correct / incorrect generations. With the identified layer, train a linear classifier for the previously defined settings.
+    - Single parameter: answer correctness
+
+Evaluation: compare model generations against ground truth to obtain labels. 
