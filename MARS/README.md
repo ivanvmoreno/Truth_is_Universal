@@ -24,7 +24,7 @@ Evaluation: compare model generations against ground truth to obtain labels. Vis
 The goal of this work is to understand how much self-aware models are of their ignorance by analysing its internals. It is inspired by the following two papers: 
 
 - **Truth is Universal: Robust Detection of Lies in LLMs** (https://arxiv.org/abs/2407.12831): This paper finds "the direction of truth" to predict whether a statement is true from internals. The tecniques used here are simple and explained.
-- **Language Models (Mostly) Know What They Know*** (https://arxiv.org/abs/2207.05221): This paper predicts correctness from internals, but they don't share their techniques. 
+- **Language Models (Mostly) Know What They Know** (https://arxiv.org/abs/2207.05221): This paper predicts correctness from internals, but they don't share their techniques. 
 
 We have tried to reproduce the results from the second paper using similar techniques from the first paper. 
 
