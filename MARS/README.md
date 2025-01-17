@@ -37,6 +37,8 @@ For our experiments, we needed a dataset such that
 
 For that, we took a dataset of all the cities in the world with over 1000 people and asked the model to predict the country where the city is located in the following format.
 
+Cities dataset: https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&sort=name
+
 *In which country is the city of Barcelona located?*
 
 We find that randomlly sampling from this dataset, Llama3 8B would be correct in about 75% of cases, which gives enough wrong answers. We also find that there are 3 kind of solutions that we could get from the model:
